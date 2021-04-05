@@ -1,0 +1,16 @@
+{
+	"manifest_version": 3,
+	"name": "smab Author Tracker Extension",
+	"version": "0.3.0",
+
+	"content_scripts": [
+		{
+			"matches": [
+				"*://nzbindex.nl/*"
+			],
+			"js": [
+				"content.js"
+			]
+		}
+	]
+}
