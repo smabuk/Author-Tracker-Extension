@@ -1,9 +1,9 @@
-console.log("smab Author Tracker 0.3.0");
+console.log("smab Author Tracker 0.4.0");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
 function cleanWbrs() {
-	console.log("smab Author Tracker remove wbr tags...");
+	console.log("smab Author Tracker ...remove wbr tags...");
 
 	var i = 0;
 	
@@ -14,14 +14,11 @@ function cleanWbrs() {
 }
 
 function searchAndFilter() {
-	console.log("smab Author Tracker search and filter ...");
+	console.log("smab Author Tracker ...search and filter ...");
 	
-	i = 0;
-	var nameStr = "";
 	var labels = document.getElementsByClassName('name');
 	for (label of labels) {
-		var foundAuthor = false;
-		nameStr = label.innerHTML;
+		var nameStr = label.innerHTML;
 		label.innerHTML = nameStr;
 		
 		// SPAM
@@ -33,6 +30,7 @@ function searchAndFilter() {
 			label.parentNode.parentNode.style.visibility = 'hidden';
 			label.parentNode.parentNode.style.display = 'none';
 		} else if (
+			// Books and Authors
 					/aaronovi/i.test(nameStr)
 					|| /baddiel/i.test(nameStr)
 					|| /beaton/i.test(nameStr)
@@ -64,7 +62,34 @@ function searchAndFilter() {
 					|| /peter.*robinson/i.test(nameStr)
 					|| /rowling/i.test(nameStr)
 					|| /russinovic/i.test(nameStr)
-					) {
+			// Magazines
+					|| /android/i.test(nameStr)
+					|| /arrowords/i.test(nameStr)
+					|| /bdm/i.test(nameStr)
+					|| /CODE/i.test(nameStr)
+					|| /computeractive/i.test(nameStr)
+					|| /computer.*shopper/i.test(nameStr)
+					|| /criss.*cross/i.test(nameStr)
+					|| /crossword/i.test(nameStr)
+					|| /custom.*pc/i.test(nameStr)
+					|| /dotnet/i.test(nameStr)
+					|| /economist.*uk/i.test(nameStr)
+					|| /futures/i.test(nameStr)
+					|| /maximum.*pc/i.test(nameStr)
+					|| /microsoft/i.test(nameStr)
+					|| /msdn/i.test(nameStr)
+					|| /new.*scientist/i.test(nameStr)
+					|| /nintendo/i.test(nameStr)
+					|| /puzzle/i.test(nameStr)
+					|| /radio.*times/i.test(nameStr)
+					|| /retro.*game/i.test(nameStr)
+					|| /ntific.*rican/i.test(nameStr)
+					|| /T3.*uk/i.test(nameStr)
+					|| /stuff/i.test(nameStr)
+					|| /ultimate.*guide/i.test(nameStr)
+					|| /windows.*guide/i.test(nameStr)
+					|| /xbox.*guide/i.test(nameStr)
+				) {
 			console.log(nameStr);
 			label.style['background-color'] = '#0000ff';
 			label.style['color'] = 'yellow';
@@ -72,6 +97,6 @@ function searchAndFilter() {
 		
 	}
 	
-	console.log("smab Author Tracker Done");
+	console.log("smab Author Tracker ...Done");
 }
 
