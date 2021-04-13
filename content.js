@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.0");
+console.log("smab Author Tracker 0.4.1");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -22,7 +22,10 @@ function searchAndFilter() {
 		label.innerHTML = nameStr;
 		
 		// SPAM
-		if (/[\da-f]{32}/i.test(nameStr)) {
+		if (
+				/[\da-f]{32}/i.test(nameStr)
+			|| /2\/9.*[\da-z]{24}.*par2/i.test(nameStr)
+			) {
 			foundAuthor = false;
 			//console.log(`SPAM ${nameStr}`);
 			
