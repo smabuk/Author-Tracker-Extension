@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "smab Author Tracker Extension",
-	"version": "0.4.1",
+	"version": "0.4.2",
 
 	"content_scripts": [
 		{
