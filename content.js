@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.4");
+console.log("smab Author Tracker 0.4.5");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -35,8 +35,11 @@ function searchAndFilter() {
         } else if (
             // Books and Authors
             /aaronovi/i.test(nameStr)
+            || /robert.*asprin/i.test(nameStr)
             || /baddiel/i.test(nameStr)
-            || /brooks/i.test(nameStr)
+            || /mel.*brooks/i.test(nameStr)
+            || /max.*brooks/i.test(nameStr)
+            || /terry.*brooks/i.test(nameStr)
             || /butcher/i.test(nameStr)
             || /orson.*scott.*card/i.test(nameStr)
             || /colfer/i.test(nameStr)
@@ -102,6 +105,7 @@ function searchAndFilter() {
             || /ferrante/i.test(nameStr)
             || /grisham/i.test(nameStr)
             || /harari/i.test(nameStr)
+            || /ishiguro/i.test(nameStr)
             || /j.*d.*robb/i.test(nameStr)
             || /julia.*quinn/i.test(nameStr)
             || /lucinda.*riley/i.test(nameStr)
