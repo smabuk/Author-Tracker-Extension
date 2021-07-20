@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.5");
+console.log("smab Author Tracker 0.4.6");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -123,6 +123,7 @@ function searchAndFilter() {
             || /national.*geographic/i.test(nameStr)
             || /saramago/i.test(nameStr)
             || /toni.*jordan/i.test(nameStr)
+            || /yoga/i.test(nameStr)
         ) {
             console.log(nameStr);
             label.style['background-color'] = '#ff00c1';
