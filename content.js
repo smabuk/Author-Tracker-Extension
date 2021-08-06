@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.6");
+console.log("smab Author Tracker 0.4.7");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -68,7 +68,7 @@ function searchAndFilter() {
             || /android/i.test(nameStr)
             || /arrowords/i.test(nameStr)
             || /bdm/i.test(nameStr)
-            || /CODE/i.test(nameStr)
+            || /CODE.*magazine/i.test(nameStr)
             || /computeractive/i.test(nameStr)
             || /computer.*shopper/i.test(nameStr)
             || /criss.*cross/i.test(nameStr)
@@ -86,7 +86,7 @@ function searchAndFilter() {
             || /pcworld/i.test(nameStr)
             || /radio.*times/i.test(nameStr)
             || /retro.*game/i.test(nameStr)
-            || /ntific.*rican/i.test(nameStr)
+            || /ntifi.*rican/i.test(nameStr)
             || /T3.*uk/i.test(nameStr)
             || /stuff/i.test(nameStr)
             || /ultimate.*guide/i.test(nameStr)
@@ -101,10 +101,12 @@ function searchAndFilter() {
              /alan.*bennett/i.test(nameStr)
             || /beaton/i.test(nameStr)
             || /cleeves/i.test(nameStr)
+            || /coren/i.test(nameStr)
             || /ellis.*peters/i.test(nameStr)
             || /ferrante/i.test(nameStr)
             || /grisham/i.test(nameStr)
             || /harari/i.test(nameStr)
+            || /hislop/i.test(nameStr)
             || /ishiguro/i.test(nameStr)
             || /j.*d.*robb/i.test(nameStr)
             || /julia.*quinn/i.test(nameStr)
@@ -121,6 +123,7 @@ function searchAndFilter() {
              /bill.*bryson/i.test(nameStr)
             || /lagerkrantz/i.test(nameStr)
             || /national.*geographic/i.test(nameStr)
+            || /physio/i.test(nameStr)
             || /saramago/i.test(nameStr)
             || /toni.*jordan/i.test(nameStr)
             || /yoga/i.test(nameStr)
