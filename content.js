@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.11");
+console.log("smab Author Tracker 0.4.12");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -37,6 +37,7 @@ function searchAndFilter() {
             /aaronovi/i.test(nameStr)
             || /robert.*asprin/i.test(nameStr)
             || /baddiel/i.test(nameStr)
+            || /iain.*banks/i.test(nameStr)
             || /mel.*brooks/i.test(nameStr)
             || /max.*brooks/i.test(nameStr)
             || /terry.*brooks/i.test(nameStr)
@@ -57,6 +58,7 @@ function searchAndFilter() {
             || /leckie/i.test(nameStr)
             || /george.*martin/i.test(nameStr)
             || /randal.*munro/i.test(nameStr)
+            || /modesitt/i.test(nameStr)
             || /osman/i.test(nameStr)
             || /pratchett/i.test(nameStr)
             || /pullman/i.test(nameStr)
