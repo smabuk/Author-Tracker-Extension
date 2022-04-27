@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.14");
+console.log("smab Author Tracker 0.4.15");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -81,6 +81,7 @@ function searchAndFilter() {
             || /dotnet/i.test(nameStr)
             || /economist.*uk/i.test(nameStr)
             || /futures/i.test(nameStr)
+            || /hackspace/i.test(nameStr)
             || /maximum.*pc/i.test(nameStr)
             || /microsoft/i.test(nameStr)
             || /msdn/i.test(nameStr)
@@ -127,6 +128,7 @@ function searchAndFilter() {
         } else if (
             // Ali
              /bill.*bryson/i.test(nameStr)
+            || /colouring.*book/i.test(nameStr)
             || /cookbook/i.test(nameStr)
             || /lagerkrantz/i.test(nameStr)
             || /lets.*colour/i.test(nameStr)
