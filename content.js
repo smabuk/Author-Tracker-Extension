@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.15");
+console.log("smab Author Tracker 0.4.16");
 setTimeout(cleanWbrs, 2000);
 setTimeout(searchAndFilter, 2400);
 
@@ -81,6 +81,7 @@ function searchAndFilter() {
             || /dotnet/i.test(nameStr)
             || /economist.*uk/i.test(nameStr)
             || /futures/i.test(nameStr)
+            || /hackercool/i.test(nameStr)
             || /hackspace/i.test(nameStr)
             || /maximum.*pc/i.test(nameStr)
             || /microsoft/i.test(nameStr)
