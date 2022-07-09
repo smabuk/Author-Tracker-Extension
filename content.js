@@ -1,5 +1,6 @@
-console.log("smab Author Tracker 0.4.18");
+console.log("smab Author Tracker 0.4.19");
 setTimeout(cleanWbrs, 2000);
+setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
 
 function cleanWbrs() {
@@ -10,6 +11,23 @@ function cleanWbrs() {
     var wbrs = document.getElementsByTagName('wbr');
     for (i = 0, len = wbrs.length; i != len; ++i) {
         wbrs[0].parentNode.removeChild(wbrs[0]);
+    }
+}
+
+function ignorePosters() {
+    console.log("smab Author Tracker ...ignore certain posters...");
+
+    var i = 0;
+
+    var posters = document.getElementsByClassName('poster');
+    for (poster of posters) {
+        if (
+            /kobe\.com \(Cornamusa\)/i.test(poster.innerHTML)
+        ) {
+            //console.log(`IGNORE POSTER ${poster.innerHTML}`);
+            poster.parentNode.parentNode.parentNode.style.visibility = 'hidden';
+            poster.parentNode.parentNode.parentNode.style.display = 'none';
+		}
     }
 }
 
