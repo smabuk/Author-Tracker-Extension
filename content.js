@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.19");
+console.log("smab Author Tracker 0.4.20");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -143,6 +143,8 @@ function searchAndFilter() {
             || /marian.*keyes/i.test(nameStr)
             || /ngaio.*marsh/i.test(nameStr)
             || /nora.*roberts/i.test(nameStr)
+            || /richard.*coles/i.test(nameStr)
+            || /dunant/i.test(nameStr)
         ) {
             console.log(nameStr);
             label.style['background-color'] = '#75f1bb';
