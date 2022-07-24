@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.20");
+console.log("smab Author Tracker 0.4.21");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -87,6 +87,8 @@ function searchAndFilter() {
             || /russinovic/i.test(nameStr)
             || /neal.stephenson/i.test(nameStr)
             // Magazines
+            || /all.*about.*history/i.test(nameStr)
+            || /all.*about.*space/i.test(nameStr)
             || /amiga/i.test(nameStr)
             || /android/i.test(nameStr)
             || /arrowords/i.test(nameStr)
