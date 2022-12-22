@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.24");
+console.log("smab Author Tracker 0.4.25");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -23,6 +23,7 @@ function ignorePosters() {
     for (poster of posters) {
         if (
             /kobe\.com \(Cornamusa\)/i.test(poster.innerHTML)
+            || /TagesNews/i.test(poster.innerHTML)
         ) {
             //console.log(`IGNORE POSTER ${poster.innerHTML}`);
             poster.parentNode.parentNode.parentNode.style.visibility = 'hidden';
