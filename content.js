@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.26");
+console.log("smab Author Tracker 0.4.27");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -62,7 +62,7 @@ function searchAndFilter() {
             || /mel.*brooks/i.test(nameStr)
             || /max.*brooks/i.test(nameStr)
             || /terry.*brooks/i.test(nameStr)
-            || /butcher/i.test(nameStr)
+            || /jim.*butcher/i.test(nameStr)
             || /orson.*scott.*card/i.test(nameStr)
             || /colfer/i.test(nameStr)
             || /james.*corey/i.test(nameStr)
@@ -110,7 +110,7 @@ function searchAndFilter() {
             || /crossword/i.test(nameStr)
             || /custom.*pc/i.test(nameStr)
             || /dotnet/i.test(nameStr)
-            || /economist.*uk/i.test(nameStr)
+            //|| /economist.*uk/i.test(nameStr)
             || /futures/i.test(nameStr)
             || /hackercool/i.test(nameStr)
             || /hackspace/i.test(nameStr)
@@ -125,7 +125,8 @@ function searchAndFilter() {
             || /private.*eye/i.test(nameStr)
             || /radio.*times/i.test(nameStr)
             || /retro.*game/i.test(nameStr)
-            || /ntifi.*rican/i.test(nameStr)
+            //|| /ntifi.*rican/i.test(nameStr)
+            || /samsung.*galaxy/i.test(nameStr)
             || /T3.*uk/i.test(nameStr)
             || /stuff/i.test(nameStr)
             || /ultimate.*guide/i.test(nameStr)
@@ -169,6 +170,7 @@ function searchAndFilter() {
             || /lagerkrantz/i.test(nameStr)
             || /lets.*colour/i.test(nameStr)
             || /national.*geographic/i.test(nameStr)
+            || /papercrafter/i.test(nameStr)
             || /physio/i.test(nameStr)
             || /recipe/i.test(nameStr)
             || /saramago/i.test(nameStr)
