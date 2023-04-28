@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.27");
+console.log("smab Author Tracker 0.4.28");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -167,6 +167,7 @@ function searchAndFilter() {
              /bill.*bryson/i.test(nameStr)
             || /colouring.*book/i.test(nameStr)
             || /cookbook/i.test(nameStr)
+            || /dolls.house/i.test(nameStr)
             || /lagerkrantz/i.test(nameStr)
             || /lets.*colour/i.test(nameStr)
             || /national.*geographic/i.test(nameStr)
