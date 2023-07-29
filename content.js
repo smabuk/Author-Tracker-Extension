@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.29");
+console.log("smab Author Tracker 0.4.30");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -105,6 +105,7 @@ function searchAndFilter() {
             || /arrowords/i.test(nameStr)
             || /bdm/i.test(nameStr)
             || /CODE.*magazine/i.test(nameStr)
+            || /coding/i.test(nameStr)
             || /computeractive/i.test(nameStr)
             || /computer.*shopper/i.test(nameStr)
             || /criss.*cross/i.test(nameStr)
@@ -125,6 +126,7 @@ function searchAndFilter() {
             || /puzzle/i.test(nameStr)
             || /pcworld/i.test(nameStr)
             || /private.*eye/i.test(nameStr)
+            || /programming/i.test(nameStr)
             || /radio.*times/i.test(nameStr)
             || /retro.*game/i.test(nameStr)
             //|| /ntifi.*rican/i.test(nameStr)
