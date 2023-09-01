@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.30");
+console.log("smab Author Tracker 0.4.31");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -168,7 +168,8 @@ function searchAndFilter() {
             label.style['color'] = 'yellow';
         } else if (
             // Ali
-             /bill.*bryson/i.test(nameStr)
+             /adhd/i.test(nameStr)
+            || /bill.*bryson/i.test(nameStr)
             || /colouring.*book/i.test(nameStr)
             || /cookbook/i.test(nameStr)
             || /dolls.house/i.test(nameStr)
