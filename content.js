@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.31");
+console.log("smab Author Tracker 0.4.32");
 setTimeout(cleanWbrs, 2000);
 setTimeout(ignorePosters, 2000);
 setTimeout(searchAndFilter, 2400);
@@ -97,6 +97,15 @@ function searchAndFilter() {
             || /no.*starch.*press/i.test(nameStr)
             || /o\'reilly/i.test(nameStr)
             || /packt/i.test(nameStr)
+            // Reference keywords
+            || /c\#/i.test(nameStr)
+            || /c.sharp/i.test(nameStr)
+            || /csharp/i.test(nameStr)
+            || /dotnet/i.test(nameStr)
+            || /microsoft\#/i.test(nameStr)
+            || /\.net/i.test(nameStr)
+            || /visual.studio\#/i.test(nameStr)
+            || /vs\#/i.test(nameStr)
             // Magazines
             || /all.*about.*history/i.test(nameStr)
             || /all.*about.*space/i.test(nameStr)
