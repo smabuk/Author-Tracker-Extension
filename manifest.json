@@ -1,13 +1,15 @@
 {
 	"manifest_version": 3,
 	"name": "smab Author Tracker Extension",
-	"description": "Filter and highlight search pages at nxbindex.nl",
-	"version": "0.4.33",
+	"description": "Filter and highlight search pages at nxbindex.nl and nzbindex.com",
+	"version": "0.4.35",
 
 	"content_scripts": [
 		{
 			"matches": [
-				"*://nzbindex.nl/*"
+				"*://nzbindex.nl/*",
+				"*://nzbindex.com/*",
+				"*://beta.nzbindex.com/*"
 			],
 			"js": [
 				"content.js"

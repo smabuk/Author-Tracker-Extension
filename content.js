@@ -1,7 +1,12 @@
-console.log("smab Author Tracker 0.4.33");
-setTimeout(cleanWbrs, 2000);
-setTimeout(ignorePosters, 2000);
-setTimeout(searchAndFilter, 2400);
+console.log("smab Author Tracker 0.4.35");
+
+var labels = document.getElementsByClassName('name');
+if (labels.length != 0) {
+    // Old formatting pre 2024-07
+    setTimeout(cleanWbrs, 2000);
+    setTimeout(ignorePosters, 2000);
+    setTimeout(searchAndFilter, 2400);
+}
 
 function cleanWbrs() {
     console.log("smab Author Tracker ...remove wbr tags...");
@@ -26,6 +31,7 @@ function ignorePosters() {
             || /TagesNews/i.test(poster.innerHTML)
             || /6e958bd0/i.test(poster.innerHTML)
             || /Uitvallers/i.test(poster.innerHTML)
+            || /Kr.nt.n/i.test(poster.innerHTML)
         ) {
             //console.log(`IGNORE POSTER ${poster.innerHTML}`);
             poster.parentNode.parentNode.parentNode.style.visibility = 'hidden';
