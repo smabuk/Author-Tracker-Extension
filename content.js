@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.35");
+console.log("smab Author Tracker 0.4.36");
 
 var labels = document.getElementsByClassName('name');
 if (labels.length != 0) {
@@ -30,6 +30,8 @@ function ignorePosters() {
             /kobe\.com \(Cornamusa\)/i.test(poster.innerHTML)
             || /TagesNews/i.test(poster.innerHTML)
             || /6e958bd0/i.test(poster.innerHTML)
+            || /tinus/i.test(poster.innerHTML)
+            || /canillita/i.test(poster.innerHTML)
             || /Uitvallers/i.test(poster.innerHTML)
             || /Kr.nt.n/i.test(poster.innerHTML)
         ) {
