@@ -1,4 +1,4 @@
-console.log("smab Author Tracker 0.4.36");
+console.log("smab Author Tracker 0.4.37");
 
 var labels = document.getElementsByClassName('name');
 if (labels.length != 0) {
@@ -27,7 +27,7 @@ function ignorePosters() {
     var posters = document.getElementsByClassName('poster');
     for (poster of posters) {
         if (
-            /kobe\.com \(Cornamusa\)/i.test(poster.innerHTML)
+               /\(Cornamusa\)/i.test(poster.innerHTML)
             || /TagesNews/i.test(poster.innerHTML)
             || /6e958bd0/i.test(poster.innerHTML)
             || /tinus/i.test(poster.innerHTML)
@@ -63,7 +63,7 @@ function searchAndFilter() {
             label.parentNode.parentNode.style.display = 'none';
         } else if (
             // Books and Authors
-            /aaronovi/i.test(nameStr)
+               /aaronovi/i.test(nameStr)
             || /robert.*asprin/i.test(nameStr)
             || /baddiel/i.test(nameStr)
             || /iain.*banks/i.test(nameStr)
@@ -162,7 +162,7 @@ function searchAndFilter() {
             label.style['color'] = 'yellow';
         } else if (
             // Sandra
-             /alan.*bennett/i.test(nameStr)
+               /alan.*bennett/i.test(nameStr)
             || /beaton/i.test(nameStr)
             || /cleeves/i.test(nameStr)
             || /coren/i.test(nameStr)
@@ -186,7 +186,7 @@ function searchAndFilter() {
             label.style['color'] = 'yellow';
         } else if (
             // Ali
-             /adhd/i.test(nameStr)
+               /adhd/i.test(nameStr)
             || /bill.*bryson/i.test(nameStr)
             || /colouring.*book/i.test(nameStr)
             || /cookbook/i.test(nameStr)
